@@ -1,4 +1,4 @@
-import PIL.Image as Image
+﻿import PIL.Image as Image
 import numpy as np
 import os
 import threading
@@ -78,7 +78,7 @@ def main(rgbs=None, mask1=None, mask2=None):
     :param mask2:
     :return:
     '''
-    rgbs[mask2] = 100
+    rgbs[mask2] = 255
     newImg = rgbs
     print('new',newImg)
     filePath = os.getcwd() + r'/img/I_Q.jpg'
